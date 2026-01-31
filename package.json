@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "lucide-react": "^0.563.0",
     "matter-js": "^0.20.0",
@@ -21,6 +21,7 @@
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/matter-js": "^0.20.2",
     "@types/node": "^25.1.0",
     "@types/react": "^19.2.10",

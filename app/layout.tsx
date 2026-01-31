@@ -1,10 +1,17 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Fruit Merge Game",
   description: "A simple, addictive fruit merging game.",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0", // Critical for mobile game feel
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#FFFBEB",
 };
 
 export default function RootLayout({
@@ -14,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased touch-none overflow-hidden h-screen w-screen flex flex-col items-center justify-center bg-amber-50">
+      <body className="antialiased touch-none overflow-hidden h-[100dvh] w-screen flex flex-col items-center justify-center bg-[#FFFBEB]">
         {children}
       </body>
     </html>
